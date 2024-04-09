@@ -48,19 +48,10 @@
     	
 </nav>
 
-<script>
-	function showSidebar(){
-		const sidebar=document.querySelector('.sidebar')
-		sidebar.style.display ='flex'
-	}
-	function hideSidebar(){
-		const sidebar=document.querySelector('.sidebar')
-		sidebar.style.display ='none'
-	}	
-</script>
+<script src="myscript.js"></script>
 
-    		<a href="home.html"><h1 style="font-size:15vw">SOF'S</h1>
-    		<h3 style="font-size:4vw">UPCYCLED FASHION</h3>
+<a href="home.html"><h1 style="font-size:15vw">SOF'S</h1>
+<h3 style="font-size:4vw">UPCYCLED FASHION</h3>
     	
     	
 </div>
@@ -69,40 +60,5 @@
 	<a href="https://www.facebook.com/sofiakucerobags"><img src="fb.png" alt="Facebook"></a>
 
 </div>
-
-
-<script>//javascript
-
-
-
-const cookieBox = document.querySelector(".wrapper"),
-acceptBtn=cookieBox.querySelector(".buttons button");
-
-acceptBtn.onclick = () => { 
-	document.cookie = "CookieBy=SOF'S; max-age="
-		+ 60 * 60 * 24; 
-	if (document.cookie) { 
-		consentBox.classList.add("hide"); //schová cookie box
-	} else { 
-		alert 
-			("Cookie can't be set!"); //ak nemoôe byť cookie tak sa stane error
-	} 
-}; 
-
-rejectBtn.onclick = () => { 
-	alert( 
-		"Cookies rejected. Some functionality may be limited."); 
-	consentBox.classList.add("hide"); 
-}; 
-//schovanie cookie boxu ak cookie box nie je expired
-let checkCookie = 
-	document.cookie.indexOf("CookieBy=SOF'S"); 
-//ak je cookie nastavená na schovanie inak ju ukáž	
-checkCookie !== -1 ? consentBox.classList.add("hide") : 
-	consentBox.classList.remove("hide");
-
-</script>
-
-<!-- kreatívny bod -->
 	</body>
 	</html>
