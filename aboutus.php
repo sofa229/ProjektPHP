@@ -2,21 +2,10 @@
     include_once('partials/header.php');
 ?> 
 
-       
-<script>
-	function showSidebar(){
-		const sidebar=document.querySelector('.sidebar')
-		sidebar.style.display ='flex'
-	}
-	function hideSidebar(){
-		const sidebar=document.querySelector('.sidebar')
-		sidebar.style.display ='none'
-	}	
-</script>
-       
-       
-    	<h1 style="font-size:13vw">About Us</h1></br></br></br></br>
-        <h2 style="font-size: 8vw;">This is me </h2>
+<script src="myscript.js"></script> 
+
+<h1 style="font-size:13vw">About Us</h1></br></br></br></br>
+<h2 style="font-size: 8vw;">This is me </h2>
     
 <img src="me.jpg" alt="This is me" class="ja">
 <p class="mb-5">It all started in <strong>2019.</strong> Covid came with a lot of free time and it had to be filled somehow. </br></br></p><p style="padding: 6px;" class="nadpis"> <strong>My name is Sofia and I always wanted to be different from others.</strong></p></br></br> <p class="mb-5">For Christmas I received my first set of fabric paints. <strong>At first I didn't think I would ever touch them</strong>, but it was the free time that made me start. It started with the <strong>first canvas bag </strong>which I sold on the handmade website called Sashe. Later, more and more orders and satisfied customers came.</p>
@@ -82,32 +71,6 @@
 include_once('partials/footer.php')
 ?>  
 
-<script> //slideshow images
-    var myIndex4 = 0;
-    carousel4();
-    
-    function carousel4() {
-      var i;
-      var x = document.getElementsByClassName("mySlides4");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      myIndex4++;
-      if (myIndex4 > x.length) {myIndex4 = 1}    
-      x[myIndex4-1].style.display = "block";  
-      setTimeout(carousel4, 2000); // Change image every 2 seconds
-    }
-    </script>
-
-<script>
-
-    document.addEventListener( 'wpcf7mailsent', function( event ) {
-    
-    location = 'thankyou.html';
-    
-    }, false );
-    
-    </script>
     </body>
 
 </html>
