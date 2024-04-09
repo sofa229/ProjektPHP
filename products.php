@@ -1,22 +1,10 @@
 <?php
     include_once('partials/header.php');
 ?> 
-       
-<script>//hamburger
-	function showSidebar(){//ukazsidebar
-		const sidebar=document.querySelector('.sidebar')
-		sidebar.style.display ='flex'
-	}
-	function hideSidebar(){//schovajsidebar
-		const sidebar=document.querySelector('.sidebar')
-		sidebar.style.display ='none'
-	}	
-</script>
-       
 
+<script src="myscript.js"></script>
        
-       
-        <h1 style="font-size:15vw">Our Products</h1>
+<h1 style="font-size:15vw">Our Products</h1>
       </br></br>
       <p style="padding:6px; " class="base"><strong>Our products are always created/upcycled with love. </br>We are trying to make every single piece unique and timeless and with upcycling is it not difficult at all.</br> Fabrics or pieces of clothing are ALWAYS second-hand. </br>These pieces of clothing are usually of much higher quality than clothes in fast-fashion chains,</br> that means that they last longer. So, when we create our pieces, </br>we please the planet, our wardrobe and your wallets too.</br> Because they can last forever.<em> </br></br>YOU CAN BE FOREVER ECO AND TIMELESS WITH US</em></strong></p>
        <h2 style="font-size: 9vw;">Collab SOF’S </br>X Sekáč je Láska</h2>
@@ -99,23 +87,6 @@
    <?php
    include_once('partials/footer.php')
  ?>  
-
-    <script> //slideshow images
-        var myIndex4 = 0;
-        carousel4();
-        
-        function carousel4() {
-          var i;
-          var x = document.getElementsByClassName("mySlides4");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          myIndex4++;
-          if (myIndex4 > x.length) {myIndex4 = 1}    
-          x[myIndex4-1].style.display = "block";  
-          setTimeout(carousel4, 2000); // Change image every 2 seconds
-        }
-        </script>
     </body>
 
 </html>
