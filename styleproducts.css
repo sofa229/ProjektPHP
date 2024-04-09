@@ -1,0 +1,285 @@
+#obsah {width: 760px; left: 50%; margin-left: -380px; position: absolute; top: 0px; border: 1px black;}
+body{
+  position: fixed;
+  background: white;
+  background-attachment: scroll;
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center ;
+  position: relative;
+}
+
+h1{
+    
+  padding: 200px 20px 0px 20px;
+  font-size: 170px;
+  text-align: center;
+  font-weight: bolder;
+  margin:0px;
+  background: url("list2.jpg");
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip:text;
+                
+    
+}
+
+
+hr.new4 {
+    border: 1px;
+    color : #331a00;
+    width: 10%;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: wrap;
+    padding: 3px 0px;
+    text-align: right;
+    margin: 0px 0px 0px 0px;
+    font-size: 20px;
+    background-image: url("list2.jpg");
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    position: fixed;
+}
+
+nav ul{
+flex: 1;
+text-align: right;
+padding-right: 30px;
+}
+nav ul li{
+display: inline-block;
+list-style: none;
+margin: 10px 30px;
+}
+nav ul li a{
+color: #fff;
+text-decoration: none;
+position: relative;
+
+}
+nav ul li a:after{
+content:'';
+width:0;
+height: 3px;
+position: absolute;
+bottom: -10px;
+left: 50%;
+transform: translateX(-50%);
+background: white;
+transition: width 0.5s;
+}
+
+nav ul li a:hover:after{
+width: 50%;
+}
+
+.homeicon img{
+    margin: 23px 46px 20px 46px;
+    cursor: pointer;
+    text-align: right;
+    width: 100px;
+    
+}
+
+
+.text {
+
+     
+    margin: 20%;
+    display: flex;
+    text-align: center;
+  }
+
+footer{
+    
+    text-align: center;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;margin-left: 10px;
+    color:  rgb(252, 166, 252);
+}
+nav li:first-child{
+    margin-right:auto ;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-image: url("list2.jpg");
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
+    color: white;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+
+}
+
+.sidebar a{
+width: 100%;
+margin: 20px;
+}
+@media (max-width: 800px) {
+    .hideOnMobile{
+        display: none;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+h2{
+
+    margin-left: 50px;
+    font-size: 200px;
+    background-color: rgb(252, 166, 252);
+    color: white;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.w3-content4  {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%  
+}
+
+.container {
+    display: grid;
+    align-items: center;  
+}
+
+   
+p{
+  font-size: 27px;
+  text-align: left;
+  border-radius: 0px;
+  border-block: 200px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-left: 50px;
+  margin-right: 50px; 
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+      
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+      
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+      
+      div.desc {
+        padding: 0px;
+        text-align: center;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+        max-width: 100%;
+        height: auto;
+      }
+      
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+      
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+      
+ 
+  
+    .box { display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: auto;
+        }
+
+     .sekac{
+        margin-left: 70px;
+        margin-right: 70px;
+
+        
+        }
+    
+  .base{
+    margin-left: 15vw;
+    margin-right: 15vw;
+    text-align: center;
+    color: rgb(255, 125, 255);
+  }
+
+  .nadpis{
+    margin-left: 70px;
+    margin-right: 70px;
+    color: rgb(255, 125, 255);
+  }
+
+.sofsfoot {
+  text-align: center;
+  color:  rgb(252, 166, 252);
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: 5px;
+  font-weight: bold;
+  font-family: Didot;
+}
+
+.sofsfoot a{
+  text-decoration: none;
+}
